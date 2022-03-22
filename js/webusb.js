@@ -1,3 +1,4 @@
+let device
 function connect(){
     navigator.usb.requestDevice({ filters: [{  }] })
     .then(device => {
