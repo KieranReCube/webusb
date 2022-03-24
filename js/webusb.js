@@ -36,3 +36,17 @@ while (true) {
   // value is a string.
   console.log(value);
 }
+write=false;
+const writer = port.writable.getWriter();
+
+const data = new Uint8Array([104, 101, 108, 108, 111]); // hello
+if (write){
+    await writer.write(data);
+    write=false;
+}
+
+// Allow the serial port to be closed later.
+writer.releaseLock();
+function hello(){
+    write=true;
+}
