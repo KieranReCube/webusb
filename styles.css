@@ -1,0 +1,74 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light gray background for a clean look */
+    color: #333; /* Dark text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+
+  /* Wrapper for content */
+  .container {
+    background-color: #fff; /* White background for content */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 90%;
+    max-width: 600px;
+  }
+
+  /* Title */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #375d81; /* Green accent color */
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #666; /* Subtle secondary text */
+  }
+
+  /* Textarea for data display */
+  textarea {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #444; /* Slightly lighter text */
+    background-color: #f9f9f9; /* Slightly off-white background */
+    resize: none; /* Disable resizing */
+    overflow-y: auto; /* Scroll behavior for overflow */
+    font-family: monospace; /* Monospaced font for data display */
+  }
+
+  /* Status text */
+  #status {
+    font-weight: bold;
+    color: #375d81; /* Green for connected state */
+    margin-bottom: 20px;
+  }
+
+  #status.error {
+    color: #f44336; /* Red for error state */
+  }
+
+  #status.waiting {
+    color: #666; /* Gray for waiting state */
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #888;
+  }

@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web usb</title>
+    <title>PicoStream</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
 </head>
 <body>
-    <button onclick="connect()">connect</button>
-    <button onclick="hello()"> send hello world</button>
-    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
-    </canvas>
+    <div class="container">
+        <h1>PicoStream</h1>
+        <h2 id="status">Status: Waiting for device...</h2>
+        <textarea id="dataBox" readonly></textarea>
+        <footer>
+            Powered by WebUSB | Minimal Theme
+        </footer>
+    </div>
     <script src="js/webusb.js"></script>
-    
 </body>
 </html>
